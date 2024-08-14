@@ -1,0 +1,101 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+   <header>
+    <a href="index.html">  <img src="logo.png" alt="" id="logo">    </a>
+    
+    <a href="carrinho.html"> <img src="carrinho1.png" alt="" id="carrinho"></a>
+    <a href="./cadastro.php"> <img src="icon1.png" id="icon"></a>
+    <a href=""><img src="zape1.png" id="zape"></a>
+</header>
+<main> 
+    <div class="p1">
+    <section class="caneca">
+    <a href="caneca1.html"  >  <img src="./img/cafe.png" alt="" id="" style="width: 290px; height: 300px;"></a>
+        <h5>Caneca Amo café</h5>
+        <p class="preco">R$69,90</p>
+
+    </section>
+    <section class="caneca">
+        <a href="caneca2.html"  >  <img src="./img/alienigena.png" alt="" id="" style="width: 290px; height: 300px;"></a>
+            <h5>Caneca Alienigena</h5>
+            <p class="preco">R$80,00</p>
+        </section>
+      
+        
+    </section>
+    <section class="caneca">
+         <a href="caneca2.html"  >  <img src="./img/nomeC.jpg" alt="" id=""  style="width: 250px; height: 300px;"></a>
+        <h5>Caneca personalizada com Nome.</h5>
+        <p class="preco">R$68,90</p>
+        
+    </section>
+    <section class="caneca">
+        <a href="caneca3.html"  >  <img src="./img/psicologia.png" alt="" id="" style="width: 250px; height: 300px;"></a>
+        <h5>Caneca personlizada Profissão.</h5>
+        <p class="preco">R$68,90</p>
+        
+    </section>
+</div>
+<div class="p2">
+    <section class="caneca">
+       <a href="caneca4.html"  >  <img src="./img/2.jpeg" alt="" id="" style="width: 260px; height: 250px;"></a>
+        <h5>Caneca dupla Namorados. </h5>
+     
+        <p class="preco">R$119,90</p>
+        
+    </section>
+    <section class="caneca">
+        <a href="caneca5.html"  >  <img src="./img/aluminio.png" alt="" id="" style="width: 260px; height: 250px;"></a>
+        <h5>Caneca de Alumínio com tampa.</h5>
+       
+        <p class="preco">R$90,00</p>
+        
+    </section>
+    <section class="caneca">
+        <a href="caneca6.html"  >  <img src="./img/vidro.png" alt="" id="" style="width: 260px; height: 250px;"></a>
+        <h5>Caneca abelha de vidro.</h5>
+        
+        <p class="preco">R$78,90</p>
+       
+    </section>
+    <section class="caneca">
+        <a href="caneca7.html"  >  <img src="./img/flor-seca.png" alt="" id="" style="width: 260px; height: 250px;"></a>
+        <h5>Caneca de flores secas.</h5>
+       
+        <p class="preco">R$78,90</p>
+   
+    </section>
+</div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Kanequinha's</p>
+    <p>Nos siga no instagram!</p>
+</footer>
+
+<script>
+    function adicionarAoCarrinho(botao) {
+        var produto = botao.parentNode;
+        var nome = produto.dataset.nome;
+        var preco = parseFloat(produto.dataset.preco);
+
+        var itemCarrinho = document.createElement("li");
+        itemCarrinho.innerHTML = `${nome} - R$${preco.toFixed(2)}`;
+        
+        document.getElementById("carrinho").appendChild(itemCarrinho);
+    }    
+
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
